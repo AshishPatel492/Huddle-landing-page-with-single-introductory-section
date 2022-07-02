@@ -1,0 +1,158 @@
+:root {
+  --Violet: hsl(257, 40%, 49%);
+  --SoftMagenta: hsl(300, 69%, 71%);
+}
+body {
+  background: var(--Violet);
+  margin: 0;
+  padding: 0;
+}
+main.main {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg-desktop.svg");
+  z-index: 1;
+  position: absolute;
+}
+main .right {
+  margin: 15px;
+  padding: 70px;
+  width: 50%;
+  height: 100%;
+  padding-top: 0;
+  margin-top: 0;
+}
+main .right #mockups {
+  margin-top: 40px;
+}
+main .right #logo {
+  padding-top: 80px;
+}
+main .left .content {
+  margin-top: 200px;
+}
+main .left .content h1 {
+  font-size: 3rem;
+  color: white;
+}
+main .left .content p {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.4;
+}
+main .left .content button {
+  background-color: white;
+  width: 230px;
+  height: 70px;
+  border-radius: 30px;
+  font-size: 1.3rem;
+  color: var(--Violet);
+  cursor: pointer;
+  outline: none;
+  border: none;
+  box-shadow: 5px 5px 15px rgba(59, 58, 58, 0.808);
+}
+main .left .content button:hover {
+  background: var(--SoftMagenta);
+  color: white;
+}
+main .left {
+  width: 40%;
+  height: 100%;
+  padding: 10px;
+}
+main .left .social {
+  margin-top: 250px;
+}
+main .left .social img {
+  translate: 0.8s all ease;
+  margin: 5px;
+}
+main .left .social img:hover {
+  filter: invert(60%) sepia(73%) saturate(1243%) hue-rotate(256deg)
+    brightness(107%) contrast(82%);
+  cursor: pointer;
+}
+main .left .social img {
+  border-radius: 100%;
+  border: 2px solid white;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  left: 50%;
+}
+@media (max-width: 375px) {
+  body {
+    background: var(--Violet);
+  }
+  main.main {
+    background: url("../images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    z-index: 1;
+    position: absolute;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  main.main .right {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-left: 50px;
+  }
+  main.main .right #logo {
+    margin: 0;
+    padding: 0;
+    width: 175px;
+    height: 100px;
+  }
+  main.main .right #mockups {
+    margin-top: 30px;
+    width: 290px;
+    height: 210px;
+  }
+  main.main .left {
+    padding: 0px 0px 0px 0px;
+    margin: 0;
+    width: 100%;
+  }
+  main.main .left .content {
+    margin: 0;
+    padding: 70px 0 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  main.main .left .content h1{
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+  }
+  main.main .left .content p{
+    width: 340px;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  main.main .left .content button{
+    height: 48px;
+    margin-top: 20px;
+  }
+  main.main .left .social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    width: 200px;
+      margin: 0;
+      padding: 0 0 0 0;
+  }
+}
